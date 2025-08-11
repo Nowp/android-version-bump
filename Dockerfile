@@ -6,7 +6,7 @@ LABEL "com.github.actions.icon"="chevron-up"
 LABEL "com.github.actions.color"="blue"
 
 RUN apk update
-RUN apk add -y git
+RUN apk add git
 
 COPY . .
 
