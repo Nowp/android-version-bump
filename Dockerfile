@@ -5,8 +5,8 @@ LABEL "com.github.actions.description"="Automated version bump for Android apps.
 LABEL "com.github.actions.icon"="chevron-up"
 LABEL "com.github.actions.color"="blue"
 
-RUN apt-get update
-RUN apt-get install -y git
+RUN apk update
+RUN apk add -y git
 
 COPY . .
 
